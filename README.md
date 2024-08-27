@@ -1,8 +1,12 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+How the App Works
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. App Component: This is the main component that manages the state of the to-do list.
+   It handles adding, completing, and removing to-dos. The state is passed down to child components as props.
+2. TodoForm Component: This component contain a simple form with an input field. When
+   the form is submitted, it calls the 'addToDo' function passed from the 'App' component to add a new task.
+3. TodoList Component: This component renders the list of to-dos. It maps over the 
+   'todos' array and renders a 'TodoItem' for each to-do.
+4. TodoItem Component: Each to-do item is displayed here, along with buttons to mark
+   the to-do as completed or remove it.
